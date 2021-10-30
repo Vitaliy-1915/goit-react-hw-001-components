@@ -1,15 +1,15 @@
-import React from 'react';
-import Statistics from '../Statistics/Statistics';
+// import React from 'react';
+// import Statistics from '../Statistics/Section';
 
-function WrapperStatistics(props) {
-  const { statisticalData } = props;
+// function WrapperStatistics(props) {
+//   const { statisticalData } = props;
 
-  return (
-    <div>
-      <Statistics title="Upload stats" stats={statisticalData} />;
-      {/* <Statistics stats={statisticalData} />; */}
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <Statistics title="Upload stats" stats={statisticalData} />;
+//       {/* <Statistics stats={statisticalData} />; */}
+//     </div>
+//   );
+// }
 
-export default WrapperStatistics;
+// export default WrapperStatistics;
