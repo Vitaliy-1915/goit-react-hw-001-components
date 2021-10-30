@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function TransactionHistory(props) {
   const { items } = props;
@@ -13,7 +14,7 @@ function TransactionHistory(props) {
           </tr>
         </thead>
         {items.map(item => (
-          <tbody>
+          <tbody key={item.id}>
             <tr>
               <td>{item.type}</td>
               <td>{item.amount}</td>
@@ -27,3 +28,14 @@ function TransactionHistory(props) {
 }
 
 export default TransactionHistory;
+
+TransactionHistory.propTypes = {
+  item: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    }),
+  ),
+};
