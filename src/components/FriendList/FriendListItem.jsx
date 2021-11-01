@@ -7,7 +7,13 @@ function FriendListItem(props) {
 
   return (
     <li className={s.friendItem}>
-      <span className={s.spanStatus}>{isOnline}</span>
+      <span
+        className={s.spanStatus}
+        style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+      >
+        {isOnline}
+      </span>
+
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
     </li>

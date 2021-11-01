@@ -1,26 +1,26 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
+import s from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
-// function Section(props) {
-//   const { title, children } = props;
-//   return (
-//     <section class="statistics">
-//       {title && <h2 class="title">{title}</h2>}
-//       {children}
+function Section(props) {
+  const { title, children } = props;
+  return (
+    <section className={s.section}>
+      {title && <h2 className={s.h2}>{title}</h2>}
+      {children}
+    </section>
+  );
+}
 
-//     </section>
-//   );
-// }
+export default Section;
 
-// export default Section;
-
-// Section.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     }),
-//   ),
-// };
+Section.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+};

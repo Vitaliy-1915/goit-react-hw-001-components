@@ -1,21 +1,21 @@
-// import React from 'react';
-// import Section from './Section'
+import React from 'react';
+import s from './Statistics.module.css';
 
-// function StatisticsList(props) {
-//     const { stats } = props;
+function StatisticsList(props) {
+  const { stats } = props;
 
-//     return (
-//       <>
-//         <ul class="stat-list">
-//           {stats.map(stat => (
-//             <li class="item" key={stat.id}>
-//               <span class="label">{stat.label}</span>
-//               <span class="percentage">{stat.percentage}%</span>
-//             </li>
-//           ))}
-//         </ul>
-//       </>
-//     )
-// }
+  return (
+    <>
+      <ul className={s.ul}>
+        {stats.map(stat => (
+          <li className={s.li} key={stat.id}>
+            <span className={s.spanLabel}>{stat.label}</span>
+            <span className={s.spanPercentage}>{stat.percentage}%</span>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
 
-// export default StatisticsList
+export default StatisticsList;
