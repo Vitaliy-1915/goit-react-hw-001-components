@@ -1,0 +1,39 @@
+.transactionHistoryDiv {
+  min-width: 300px;
+  min-height: 400px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px;
+
+  background-color: #fff;
+}
+
+.table {
+  width: 500px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.thead {
+  background: #83ced3;
+}
+
+.th {
+  height: 50px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.tr:nth-child(even) {
+  background: #e6e3e3;
+}
+
+.td {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: gray;
+  text-transform: capitalize;
+}
