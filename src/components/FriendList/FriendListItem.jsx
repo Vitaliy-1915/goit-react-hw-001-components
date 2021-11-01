@@ -7,9 +7,9 @@ function FriendListItem(props) {
 
   return (
     <li className={s.friendItem}>
-      <span class={s.spanStatus}>{isOnline}</span>
-      <img class={s.avatar} src={avatar} alt={name} width="48" />
-      <p class={s.name}>{name}</p>
+      <span className={s.spanStatus}>{isOnline}</span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
     </li>
   );
 }

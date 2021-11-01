@@ -49,6 +49,14 @@
   border-bottom-right-radius: 5px;
 }
 
+.statsItem:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+.statsItem:first-of-type {
+  border-bottom-left-radius: 5px;
+}
+
 .statsItem {
   display: flex;
   flex-direction: column;
@@ -59,14 +67,6 @@
   border: solid 1px;
   border-color: #000;
   background-color: #dddada;
-
-  /* :last-child {
-    border-bottom-right-radius: 5px;
-  }
-
-  :first-of-type {
-    border-bottom-left-radius: 5px;
-  } */
 }
 
 .quantity {

@@ -8,7 +8,7 @@ function FriendList(props) {
   const { friends } = props;
 
   return (
-    <ul class={s.friendList}>
+    <ul className={s.friendList}>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
