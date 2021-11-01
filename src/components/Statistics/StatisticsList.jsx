@@ -8,7 +8,7 @@ function StatisticsList(props) {
     <>
       <ul className={s.ul}>
         {stats.map(stat => (
-          <li className={s.li} key={stat.id}>
+          <li className={`${s.li} ${s[stat.id]}`} key={stat.id}>
             <span className={s.spanLabel}>{stat.label}</span>
             <span className={s.spanPercentage}>{stat.percentage}%</span>
           </li>
