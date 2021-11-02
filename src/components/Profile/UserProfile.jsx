@@ -1,12 +1,11 @@
 import React from 'react';
-import Profile from '../Profile/Profile';
-import s from '../WrapperProfile/WrapperProfile.module.css';
+import Profile from './Profile';
 
-function WrapperProfile(props) {
+function UserProfile(props) {
   const { user } = props;
 
   return (
-    <div className={s.container}>
+    <div>
       <Profile
         name={user.name}
         tag={user.tag}
@@ -18,4 +17,4 @@ function WrapperProfile(props) {
   );
 }
 
-export default WrapperProfile;
+export default UserProfile;
